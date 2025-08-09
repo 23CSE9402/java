@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        float frontLeft = scanner.nextFloat();
+        float rearLeft = scanner.nextFloat();
+        float rearRight = scanner.nextFloat();
+        float frontRight = scanner.nextFloat();
+        scanner.close();
+
+        
+        System.out.println("Front-left : " + checkPressure(frontLeft));
+        System.out.println("Rear-left : " + checkPressure(rearLeft));
+        System.out.println("Rear-right : " + checkPressure(rearRight));
+        System.out.println("Front-right : " + checkPressure(frontRight));
+    }
+
+    
+    public static String checkPressure(float pressure) {
+        if (pressure < 33)
+            return "Inflate";
+        else if (pressure > 33)
+            return "Deflate";
+        else
+            return "Untouched";
+        
+        
+        
+       
+    }
+}
