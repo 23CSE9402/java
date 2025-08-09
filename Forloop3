@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class forloop3 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int num2=sc.nextInt();
+		int count=0;
+		for(int i=num;i<=num2;i++) {
+			if(i%2!=0)
+			count++;
+			
+		}
+		System.out.println(count);
+		
+		
+
+	}
+
+}
