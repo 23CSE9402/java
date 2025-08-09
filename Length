@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Length {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int num2=sc.nextInt();
+        int len=(num+num2)*2;
+        int quan=(num*num2);
+        System.out.println("Rope Length: " +len+"m");
+        System.out.println("Carpet Quantity: "+quan+"sqm");
+        
+    }
+}
