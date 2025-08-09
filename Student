@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int totalStudents, studyGroups;
+    scanf("%d", &totalStudents);
+    scanf("%d", &studyGroups);
+
+    int studentsPerGroup = totalStudents / studyGroups;
+    int remainingStudents = totalStudents % studyGroups;
+    
+    printf("The number of students in each team is %d and left out is %d\n", studentsPerGroup, remainingStudents);
+
+    return 0;
+}
