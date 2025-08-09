@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+        
+        int w = scanner.nextInt();
+        scanner.close();
+
+        if (w < 1 || w > 100) {
+            System.out.println("Invalid Input");
+        } else if (w % 2 != 0 || w == 2) {
+            // Cannot divide odd numbers or 2 into two even parts
+            System.out.println("NO");
+        } else {
+            System.out.println("YES");
+            System.out.println((w / 2) + " " + (w / 2));
+        }
+    }
+}
