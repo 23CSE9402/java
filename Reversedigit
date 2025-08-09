@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class reversedigit {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int num1=0;
+		while(num>0) {
+			int temp=num%10;
+			num1=num1*10+temp;
+			num=num/10;
+		}
+		System.out.println(num1);
+		
+
+	}
+
+}
