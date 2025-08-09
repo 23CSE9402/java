@@ -1,0 +1,9 @@
+public class left {
+	public static void main(String args[]) {
+		int num=20;
+		int num2=1;
+		System.out.println(num<<num2);
+		System.out.println(num>>num2);
+	}
+
+}
