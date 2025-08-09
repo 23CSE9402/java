@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        if(str.equals("RED")){
+            System.out.println("The Chromatic Horizon reveals: It is Dusk");
+        }
+        else if(str.equals("BLUE")){
+            System.out.println("The Chromatic Horizon whispers: It is Dawn");
+        }
+        else{
+            System.out.println("The Chromatic Riddle unfolds: Invalid Input");
+        }
+       
+    }
+}
