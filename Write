@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class harisha {
+
+	public static void main(String[] args) {
+		int num=5;
+		if(num == 5) {
+			System.out.println("the number is equal to five");
+		}
+		if(num >3) {
+			System.out.println("the number is greater than 3");
+		}
+		if (num>7) {
+			System.out.println("the number is > than 7");
+		}
+		else {
+			System.out.println("nothing");
+		}
+		
+		
+		
+	}
+
+}
