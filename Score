@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.*;
+
+public class Score {
+
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    public static void simulateDuel(int gokulPower, int minorPower, int totalPower) {
+        int gokulScore = 0;
+        int minorScore = 0;
+        boolean gokulTurn = true;
+
+        while (totalPower > 0) {
+            if (gokulTurn) {
+                int gcdValue = gcd(gokulPower, totalPower);
+                gokulScore += gcdValue;
+                totalPower -= gcdValue;
+            } else {
+                int gcdValue = gcd(minorPower, totalPower);
+                minorScore += gcdValue;
+                totalPower -= gcdValue;
+            }
+            gokulTurn = !gokulTurn;
+        }
+
+        if (gokulScore > minorScore) {
+            System.out.println("Winner: Gokul");
+        } else if (minorScore > gokulScore) {
+            System.out.println("Winner: Minor");
+        } else {
+            System.out.println("It's a draw!");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int gokulPower = sc.nextInt();
+        int minorPower = sc.nextInt();
+        int totalPower = sc.nextInt();
+
+        simulateDuel(gokulPower, minorPower, totalPower);
+
+        sc.close();
+    }
+
+    }
