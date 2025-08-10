@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long totalDigits = sc.nextLong(); 
+        sc.close();
+        
+        if (totalDigits <= 0) {
+            System.out.println("Impossible!");
+            return;
+        }
+
+        long pages = 0;
+        long digitsPerPage = 1;
+        long start = 1;
+
+        while (totalDigits > 0) {
+            long end = start * 10 - 1; 
+            long countInRange = end - start + 1; 
+            long digitsInRange = countInRange * digitsPerPage;
+
+            if (totalDigits > digitsInRange) {
+                totalDigits -= digitsInRange;
+                pages += countInRange;
+                digitsPerPage++;
+                start *= 10;
+            } else {
+                
+                if (totalDigits % digitsPerPage == 0) {
+                    pages += totalDigits / digitsPerPage;
+                    System.out.println(pages);
+                } else {
+                    System.out.println("Impossible!");
+                }
+                return;
+            }
+        }
+
+        
+        System.out.println("Impossible!");
+    }
+}
