@@ -1,0 +1,37 @@
+import java.util.*;
+import java.math.BigInteger; 
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int nails = sc.nextInt();
+        String middle = sc.next();
+        sc.close();
+
+        boolean[] used = new boolean[10];
+        for (char c : middle.toCharArray()) used[c - '0'] = true;
+
+        int bestF = -1, bestL = -1;
+        BigInteger bestPer = BigInteger.valueOf(-1);
+
+        
+        for (int f = 9; f >= 0; f--) {
+            if (used[f]) continue;
+            for (int l = 9; l >= 0; l--) {
+                if (used[l] || l == f) continue; 
+
+                String full = f + middle + l;
+                BigInteger fullPrice = new BigInteger(full);
+                BigInteger per = fullPrice.divide(BigInteger.valueOf(nails));
+
+                if (per.compareTo(bestPer) > 0) {
+                    bestPer = per;
+                    bestF = f;
+                    bestL = l;
+                }
+            }
+        }
+
+        System.out.println(bestF + " " + bestL + " " + bestPer);
+    }
+}
