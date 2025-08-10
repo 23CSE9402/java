@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long N = sc.nextLong(); 
+        sc.close();
+
+        long count = 0;
+        for (long i = 5; i <= N; i *= 5) {
+            count += N / i;
+        }
+
+        System.out.println(count);
+    }
+}
