@@ -1,0 +1,35 @@
+import java.lang.String;
+
+
+public class string1 {
+
+	public static void main(String[] args) {
+		String str=" Kajol harisha";	
+		String str2="Kajol";
+		String str3=new String("Kajol");
+		String str4=new String("RedMatices");
+		System.out.println(str==str3);
+		System.out.println(str2.equals(str3));
+		System.out.println(str2.equalsIgnoreCase(str3));
+		System.out.println(str.length());
+		String word[]=str.split(" ");
+		for(String var:word)
+		{
+			System.out.println(var);
+		}
+		System.out.println(str.trim().length());
+		System.out.println(str.substring(0,6));
+		System.out.println(str.contains("har"));
+		System.out.println(str4.startsWith("Re"));
+		System.out.println(str4.endsWith("es"));
+		System.out.println(str.charAt(3));
+		System.out.println(str2.concat("harisha"));
+		System.out.println(str.toUpperCase());
+		System.out.println(str.toLowerCase());
+		
+		
+		
+
+	}
+
+}
