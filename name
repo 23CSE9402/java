@@ -1,0 +1,15 @@
+public class name {
+	public String display() {
+		String name="kajol";
+		return name;
+	}
+
+	public static void main(String[] args) {
+		name obj=new name();
+		String res=obj.display();
+		System.out.println(res);
+		
+
+	}
+
+}
