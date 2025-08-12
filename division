@@ -1,0 +1,14 @@
+public class div {
+	public void display(String name) {
+		System.out.println(name);
+	}
+
+	public static void main(String[] args) {
+		div obj=new div();
+		obj.display("kajol");
+		
+		
+
+	}
+
+}
