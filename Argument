@@ -1,0 +1,14 @@
+public class withoutarg {
+	public void display() {
+		System.out.println("Hi Dell nice to meet you");
+	}
+
+	public static void main(String[] args) {
+		
+		withoutarg obj=new withoutarg();
+		obj.display();
+		
+
+	}
+
+}
