@@ -1,0 +1,26 @@
+package day7;
+import java.util.Scanner;
+
+public class toggle {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = sc.nextLine();
+        StringBuilder toggled = new StringBuilder();
+        for (char ch : input.toCharArray()) {
+            if (ch >= 'A' && ch <= 'Z') {
+                toggled.append((char)(ch + 32));
+            } else if (ch >= 'a' && ch <= 'z') {
+                toggled.append((char)(ch - 32));
+            } else {
+                toggled.append(ch);
+            }
+        }
+        System.out.println("Toggled case: " + toggled.toString());
+    }
+}
+
+	
+
+
