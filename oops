@@ -1,0 +1,15 @@
+public class oops {
+	String hotelname="Maran";
+	String food="Biriyani";
+	int price=120;
+
+	public static void main(String[] args) {
+		oops obj=new oops();
+		System.out.println(obj.hotelname);
+		oops obj1=new oops();
+		System.out.println(obj.price);
+		
+
+	}
+
+}
