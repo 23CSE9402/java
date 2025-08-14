@@ -1,0 +1,22 @@
+public class static1 {
+	int rollno =1;
+	String name ="kajol";
+	static String collegename ="zion";
+	void display(int a, String name) {
+		System.out.println(a+" "+name+" "+collegename);
+	}
+
+	public static void main(String[] args) {
+		static1 obj=new static1();
+		System.out.println(obj.rollno);
+		System.out.println(static1.collegename);
+		static1.collegename="Mount";
+		obj.display(1,"kajol");
+		obj.display(2, "Divya");
+		obj.display(3,"Sathya");
+		obj.display(4, "Anu");
+		
+
+	}
+
+}
