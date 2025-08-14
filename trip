@@ -1,0 +1,25 @@
+public class trip {
+	String place="Ooty";
+	String hotel="Monika";
+	String food="Biriyani";
+	String visit="Mountain";
+	int price=5000;
+
+	public static void main(String[] args) {
+		trip obj=new trip();
+		System.out.println(obj.place);
+		trip obj1=new trip();
+		System.out.println(obj.hotel);
+		trip obj2=new trip();
+		System.out.println(obj.food);
+		trip obj3=new trip();
+		System.out.println(obj.price);
+		trip obj4=new trip();
+		System.out.println(obj.visit);
+		
+		
+		
+
+	}
+
+}
