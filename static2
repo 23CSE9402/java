@@ -1,0 +1,12 @@
+public class static2 {
+	static {
+		System.out.println("Mount zion");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Nice to meet you");
+		
+
+	}
+
+}
