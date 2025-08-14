@@ -1,0 +1,21 @@
+public class c2 {
+	int age=18;
+	String name="kajol";
+	c2(int age,String name)
+	{
+		this.age=age;
+		this.name=name;
+		
+	}
+	void display() {
+		System.out.println(age+" "+name);
+	}
+
+	public static void main(String[] args) {
+		c2 obj=new c2(7,"an");
+		System.out.println(obj.age);
+		System.out.println(obj.name);
+
+	}
+
+}
