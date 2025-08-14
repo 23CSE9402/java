@@ -1,0 +1,21 @@
+public class employee {
+	int emp_id=111;
+	String emp_name="Joe";
+	static String branch="Full stack";
+	void display(int a, String name) {
+		System.out.println(a+" "+name+" "+branch);
+	}
+	public static void main(String[] args) {
+		employee obj=new employee();
+		System.out.println(obj.emp_id);
+		System.out.println(obj.emp_name);
+		System.out.println(obj.branch);
+		obj.display(1,"kajol");
+		obj.display(2, "Divya");
+		obj.display(3,"Sathya");
+		obj.display(4, "Anu");
+		
+
+	}
+
+}
