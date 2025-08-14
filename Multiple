@@ -1,0 +1,26 @@
+interface print{
+	void display();
+}
+interface copy{
+	void show();
+}
+class Xerox implements print, copy{
+	public void display()
+	{
+		System.out.println("Displaying");
+	}
+	public void show() {
+		System.out.println("Showing");
+	}
+}
+public class multiple {
+
+	public static void main(String[] args) {
+		Xerox obj=new Xerox();
+		obj.display();
+		obj.show();
+		
+
+	}
+
+}
