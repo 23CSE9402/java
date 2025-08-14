@@ -1,0 +1,19 @@
+public class show{
+	void display() {
+		System.out.println("Hello display");
+	}
+
+	void show() {
+		System.out.println("Hello show");
+		this.display();
+	}
+
+	public static void main(String[] args) {
+		show obj=new show();
+		 obj=new show();
+		 obj.show();
+		
+
+	}
+
+}
