@@ -1,0 +1,26 @@
+class Dad{
+	void display() {
+		System.out.println("villa");
+	}
+}class Son extends Dad{
+	void property() {
+		System.out.println("House, Lands, Money");
+	}
+}class Daughter extends Dad{
+	void show() {
+		System.out.println("Jewel");
+	}
+}
+
+
+public class heirarchical {
+
+	public static void main(String[] args) {
+		
+		Son obj=new Son();
+		obj.property();
+		
+
+	}
+
+}
