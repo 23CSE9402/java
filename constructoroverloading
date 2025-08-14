@@ -1,0 +1,23 @@
+public class constructoroverloading {
+	int age=18;
+	String name="kajol";
+	void constructor() {
+		System.out.println("Hi");
+	}
+	constructoroverloading(int a, String str){
+		System.out.println(a+" "+str);
+	}
+	constructoroverloading(float b){
+		System.out.println(b);
+	}
+	
+
+	public static void main(String[] args) {
+		constructoroverloading obj=new constructoroverloading(7.8f);
+		System.out.println(obj.age);
+		System.out.println(obj.name);
+		
+
+	}
+
+}
