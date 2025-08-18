@@ -1,0 +1,22 @@
+class B{
+	int id;
+	public B(int id) {
+		this.id=id;
+	}
+	public B(B b) {
+		this .id=b.id;
+	}
+}
+
+public class cconstructor {
+	public static void main(String[] args) {
+		B b=new B(106);
+		B b1=new B(b);
+		System.out.println(b.id);
+		System.out.println(b1.id);
+		
+		
+
+	}
+
+}
