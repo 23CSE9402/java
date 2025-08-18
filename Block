@@ -1,0 +1,18 @@
+public class block {
+	{
+		System.out.println("Non-Static block Run");
+	}
+	static {
+		System.out.println("Static block Run");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Block start");
+		new block();
+		System.out.println("Block end");
+		new block();
+		
+
+	}
+
+}
