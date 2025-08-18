@@ -1,0 +1,15 @@
+public class Each {
+	public static void add(int ...m) {
+		for(int n:m) {
+			System.out.println(n);
+		}
+	}
+
+	public static void main(String[] args) {
+		add(10);
+		add(20,30);
+		add(40,50,60);
+
+	}
+
+}
