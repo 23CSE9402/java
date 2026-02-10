@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int m=sc.nextInt();
+      if(m%3==0 && m%5==0){
+        System.out.println("ThalaThalapathy");
+      }
+      else if(m%5==0){
+        System.out.println("Thalapathy");
+      }
+       else if(m%3==0){
+        System.out.println(" Thala");
+      }
+      else{
+        System.out.println(m);
+      }
+      
+    }
+}
