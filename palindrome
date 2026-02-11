@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int a=sc.nextInt();
+      int num=a;
+      int rev=0;
+       while(a>0){  //123>0  12>0  1>0  0>0
+          int r=a%10; //3  2  1
+          rev=rev*10+r;//0*10+3=3  3*10+2=32  32*10+1=321
+          a/=10;//12  1  0
+      }
+      if(num==rev){
+        System.out.println("YES");
+      }
+      else{
+        System.out.println("NO");
+      }
+    }
+}
